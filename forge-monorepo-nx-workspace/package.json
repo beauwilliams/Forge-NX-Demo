@@ -13,9 +13,9 @@
     "@nrwl/node": "15.7.2",
     "@nrwl/nx-cloud": "15.0.3",
     "@nrwl/workspace": "15.7.2",
+    "@toolsplus/nx-forge": "^1.5.0",
     "nx": "15.7.2",
     "prettier": "^2.6.2",
     "typescript": "4.8.4"
   }
 }
-
