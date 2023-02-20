@@ -49,9 +49,9 @@ install-dev *PACKAGES:
     @#Recipe param as list of packages
     @ni -D {{PACKAGES}}
 generate-forge-app *APP_NAME:
-    @npx nx g @toolsplus/nx-forge:app {{APP_NAME}} --dry-run
+    @nx g @toolsplus/nx-forge:app {{APP_NAME}} --dry-run
 generate-react-app *APP_NAME:
-    @npx nx g @nrwl/react:app {{APP_NAME}}
+    @nx g @nrwl/react:app {{APP_NAME}}
 
 
 # Hidden Recipes
