@@ -48,6 +48,9 @@ install *PACKAGES:
 install-dev *PACKAGES:
     @#Recipe param as list of packages
     @ni -D {{PACKAGES}}
+update-workspace:
+    @#Update the workspace and deps
+    @nx migrate latest
 generate-forge-app *APP_NAME:
     @nx g @toolsplus/nx-forge:app {{APP_NAME}} --dry-run
 generate-react-app *APP_NAME:
