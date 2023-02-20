@@ -48,8 +48,8 @@ install *PACKAGES:
 install-dev *PACKAGES:
     @#Recipe param as list of packages
     @ni -D {{PACKAGES}}
-generate-forge-app *APP_NAME
-    @nx g @toolsplus/nx-forge:app {{APP_NAME}}
+generate-forge-app *APP_NAME:
+    @nx g @toolsplus/nx-forge:app {{APP_NAME}} --dry-run
 
 
 # Hidden Recipes
