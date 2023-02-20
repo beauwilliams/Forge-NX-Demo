@@ -50,9 +50,6 @@ install-dev *PACKAGES:
     @ni -D {{PACKAGES}}
 generate-forge-app *APP_NAME
     @nx g @toolsplus/nx-forge:app {{APP_NAME}}
-generate-forge-app-preview *APP_NAME
-    @nx g @toolsplus/nx-forge:app {{APP_NAME}} --dry-run
-
 
 
 # Hidden Recipes
