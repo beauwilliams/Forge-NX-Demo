@@ -48,6 +48,10 @@ install *PACKAGES:
 install-dev *PACKAGES:
     @#Recipe param as list of packages
     @ni -D {{PACKAGES}}
+build *APP:
+    @nx build {{APP}}
+build-forge-nx:
+    @just build forge-nx-demo-app
 update-workspace:
     @#Update the workspace and deps
     @nx migrate latest
