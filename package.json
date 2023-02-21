@@ -24,7 +24,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@svgr/webpack": "^6.1.2",
     "@testing-library/react": "13.4.0",
-    "@toolsplus/nx-forge": "^1.5.0",
+    "@toolsplus/nx-forge": "*",
     "@types/jest": "28.1.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
@@ -52,6 +52,8 @@
     "url-loader": "^4.1.1"
   },
   "dependencies": {
+    "@forge/api": "latest",
+    "@forge/resolver": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tslib": "^2.3.0"
