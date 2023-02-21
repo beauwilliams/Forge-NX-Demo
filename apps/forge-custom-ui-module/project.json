@@ -6,15 +6,13 @@
   "targets": {
     "build": {
       "executor": "@nrwl/webpack:webpack",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
         "outputPath": "dist/apps/forge-custom-ui-module",
         "index": "apps/forge-custom-ui-module/src/index.html",
-        "baseHref": "/",
+        "baseHref": ".",
         "main": "apps/forge-custom-ui-module/src/main.tsx",
         "tsConfig": "apps/forge-custom-ui-module/tsconfig.app.json",
         "assets": [
@@ -68,20 +66,14 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/forge-custom-ui-module/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["apps/forge-custom-ui-module/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "apps/forge-custom-ui-module/jest.config.ts",
         "passWithNoTests": true
