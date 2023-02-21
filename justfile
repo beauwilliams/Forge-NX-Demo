@@ -52,9 +52,13 @@ update-workspace:
     @#Update the workspace and deps
     @nx migrate latest
 generate-forge-app *APP_NAME:
-    @nx g @toolsplus/nx-forge:app {{APP_NAME}} --dry-run
+    @nx g @toolsplus/nx-forge:app {{APP_NAME}}
 generate-react-app *APP_NAME:
     @nx g @nrwl/react:app {{APP_NAME}}
+dry-generate-forge-app *APP_NAME:
+    @nx g @toolsplus/nx-forge:app {{APP_NAME}} --dry-run
+dry-generate-react-app *APP_NAME:
+    @nx g @nrwl/react:app {{APP_NAME}} --dry-run
 
 
 # Hidden Recipes
