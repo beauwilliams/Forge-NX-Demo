@@ -52,6 +52,14 @@ build *APP:
     @nx build {{APP}}
 build-forge-nx:
     @just build forge-nx-demo-app
+FORGE-NX-APP := "forge-nx-demo-app"
+forge-register:
+    @cd dist/apps/{{FORGE-NX-APP}} && forge register && cd ../..
+forge-deploy:
+    @cd dist/apps/{{FORGE-NX-APP}} && forge deploy && cd ../..
+forge-install:
+    @cd dist/apps/{{FORGE-NX-APP}} && forge install && cd ../..
+
 update-workspace:
     @#Update the workspace and deps
     @nx migrate latest
